@@ -1,0 +1,27 @@
+Dependencies to be installed:
+----------------------------
+1- Opencv
+2- pytesseract
+3- tesseract
+
+
+Tesseract-OCR to be downloaded from the link given below and installed on the disk and path should be provided before using OCR.
+https://github.com/UB-Mannheim/tesseract/wiki
+
+Working:
+-------
+to use the code, 
+1- pass the image path to the main function.
+2- it will return a list
+3- each element of the list will be a tuple consist of class name of the error and the True Error detected using OCR. 
+
+Example:
+
+res = main("dell_posterror/1dcb6fa86ed3ad359716532b1e252806062e85b43a1a42965628f892b54fc2c4.jpg")
+print(res)
+
+
+=>[('SYSTEM SETTINGS RESET', 'invalid configuration information please run setup program'), 
+	('SYSTEM SETTINGS RESET', 'time-of-day not set - please run setup program'), 
+	('MEMORY SIZE CHANGE', 'alert! the amount of system memory has changed')]
+
